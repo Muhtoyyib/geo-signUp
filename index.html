@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="index.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <div>
+            <a href="/" class="nav--brand">
+                <img src="/logo-removebg-preview.png" alt="GeoTopUp">
+                <h1>GeoTopUp Inc</h1>
+            </a>
+        </div>
+        <div class="nav--button">
+            <a href="#" class="btn btn--nav">Get app</a>
+        </div>
+    </div>
+
+   
+    <div class="container">
+        <div class="container--info container--container">
+            <h1 class='signUp-heading'> Sign Up Today for Exclusive Access to Financial Tools and Insights </h1>
+
+            <p class='signUp-paragraph__1'>
+                Welcome to <span>GeoTopUp</span>, where financial empowerment meets cutting-edge technology.
+                Whether you&apos;re saving for a goal, investing for the future, or managing your money smarter,
+                we&apos;re here to help you succeed
+            </p>
+    
+            <p class='signUp-paragraph__2'>
+                Join us and embark on a journey to financial freedom!
+            </p>
+        </div>
+    
+        <div class="container--form container--container">
+            <h1 class="secondary-heading form-heading">
+                Ready to Take Charge? Sign Up Now!
+            </h1>
+            
+            <form class="form" id="signupForm" action="https://geotopup.azurewebsites.net/user/signup" method="POST">
+                <div class="form__group">
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name" class="form__input" required>
+                    <label class="form__label" for="firstname">First Name</label>
+                </div>
+                
+                <div class="form__group">
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name" class="form__input" required>
+                    <label class="form__label" for="lastname">Last Name</label>
+                </div>
+            
+                <div class="form__group">
+                    <input type="text" id="email" name="email" placeholder="Email Address" class="form__input" required>
+                    <label class="form__label" for="email">Email address</label>
+                    <div id="emailError" class="error-message"></div>
+                </div>
+            
+                <div class="form__group">
+                    <input type="number" id="number" name="number" placeholder="Number" class="form__input" required>
+                    <label class="form__label" for="number">Phone</label>
+                    <div id="numberError" class="error-message"></div>
+                </div>
+            
+                <div class="form__group">
+                    <input type="text" id="referal" name="referal" placeholder="Referral Code" class="form__input" required>
+                    <label class="form__label" for="referal">Referral</label>
+                </div>
+            
+                <div class="form__group">
+                    <input type="password" id="password" name="password" placeholder="Password" class="form__input" required>
+                    <label class="form__label" for="password">Password</label>
+                    <div id="passwordError" class="error-message"></div>
+                </div>
+                
+                <button type="submit" class="btn btn--green btn--form">Sign Up</button>
+            </form>
+            
+        </div>
+    </div>
+   
+    <script src="index.js"></script>
+</body>
+</html>
