@@ -192,7 +192,7 @@ margin-bottom: 1rem;
 .signUp-paragraph__1 {
     font-size: 1.5rem;
     color: #495057;
-    line-height: 1.8rem;
+    line-height: 2rem;
 }
 
 .signUp-paragraph__2 {
@@ -266,7 +266,8 @@ padding-bottom: 2rem; }
 }
 
 .form__group:not(:last-child) {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    margin-top: 1rem;
 }
 
 .form__input {
@@ -301,7 +302,7 @@ padding-bottom: 2rem; }
 .form__label {
     font-size: 1.6rem;
     font-weight: 700;
-    margin-top: .5rem;
+    /* margin-top: .5rem; */
     display: block;
     transition: all .3s;
     color: #37b24d;
@@ -310,7 +311,7 @@ padding-bottom: 2rem; }
 .form__input:placeholder-shown + .form__label {
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-2rem);
+    transform: translateX(-2rem);
 }
 
 .error-message {
